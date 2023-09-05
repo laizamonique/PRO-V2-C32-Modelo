@@ -27,7 +27,7 @@ function setup() {
   button.position(width / 2, height - 100);
   button.class("blowButton");
 
-  //button.mousePressed(blow);
+  button.mousePressed(blow);
 
   //buttonPressed(blow);
   
@@ -50,7 +50,7 @@ function blow() {
 
   //Matter.Body.applyForce(ball.body, {x:0, y:0}, {x:0, y:-0.05});
 
-  //Matter.Body.applyForce(ball.body, {x:0, y:0}, {x:0, y:0.05});
+  Matter.Body.applyForce(ball.body, {x:0, y:0}, {x:0, y:0.05});
   
   //Matter.Body.applyForce(ball.body, {x:0, y:0}, {x:0.05, y:0.05});
   
